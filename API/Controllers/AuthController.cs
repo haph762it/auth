@@ -18,7 +18,7 @@ namespace API.Controllers
         {
         }
 
-        [HttpPost(Name = "CreateUser")]
+        [HttpPost("SignUp", Name = "CreateUser")]
         public async Task<IActionResult> CreateUser(UserManager<AppUser> userManager, [FromBody] UserRegistrationModel userRegistrationModel)
         {
             AppUser user = new AppUser()
